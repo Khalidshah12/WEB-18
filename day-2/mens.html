@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCTS PAGE LS</title>
+    <title>Mens page</title>
     <style>
         #container{
             display: grid;
@@ -27,6 +27,9 @@
         p{
             font-weight: bold;
             margin-top: -10px;
+        }
+        #cartbutton{
+          font-weight: bold;
         }
     </style>
 </head>
@@ -323,6 +326,7 @@
 
         var btn = document.createElement("button")
         btn.addEventListener("click",addToCart)
+        btn.setAttribute("id","cartbutton")
         btn.innerText = "Add to Cart"
         function addToCart(){
 
